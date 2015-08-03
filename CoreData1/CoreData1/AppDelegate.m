@@ -61,9 +61,14 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:nil userInfo:nil];
     }];
     
-    // Set custom ViewController (ptvc)
+    UINavigationController *nc = [[UINavigationController alloc]init];
+    ptvc.title = @"Fotos data";
+    [nc pushViewController:ptvc animated:NO];
+    
+    //ala ma kota
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    _window.rootViewController = ptvc;
+    self.window.rootViewController = nc;
     [self.window makeKeyAndVisible];
     
     return YES;
