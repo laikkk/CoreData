@@ -61,11 +61,9 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:nil userInfo:nil];
     }];
     
+    // Init Nav ctrl and push ptvs
     UINavigationController *nc = [[UINavigationController alloc]init];
-    ptvc.title = @"Fotos data";
     [nc pushViewController:ptvc animated:NO];
-    
-    //ala ma kota
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = nc;

@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Fotos Data";
     
     // Initialize the refresh control.
     self.refreshControl = [[UIRefreshControl alloc] init];
